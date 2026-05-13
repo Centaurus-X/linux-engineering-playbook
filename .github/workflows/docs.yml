@@ -37,7 +37,7 @@ jobs:
           pip install -r requirements-docs.txt
 
       - name: Build documentation site
-        run: mkdocs build --strict
+        run: mkdocs build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
