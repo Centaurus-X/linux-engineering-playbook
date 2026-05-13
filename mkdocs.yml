@@ -1,0 +1,65 @@
+﻿site_name: Linux Engineering Playbook
+site_description: A practical Linux systems engineering playbook for GPU/CUDA, Proxmox, Python environments, Linux services, and administration.
+site_url: https://centaurus-x.github.io/linux-engineering-playbook/
+repo_url: https://github.com/Centaurus-X/linux-engineering-playbook
+repo_name: Centaurus-X/linux-engineering-playbook
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: README.md
+  - Overview:
+      - Documentation Map: 00-overview/documentation-map.md
+      - Writing and Style Guide: 00-overview/writing-and-style-guide.md
+  - Linux GPU CUDA:
+      - Overview: 10-linux-gpu-cuda/README.md
+      - NVIDIA Driver and CUDA: 10-linux-gpu-cuda/ubuntu-22-04-nvidia-driver-and-cuda.md
+      - cuDNN: 10-linux-gpu-cuda/ubuntu-22-04-cudnn.md
+      - TensorFlow GPU Validation: 10-linux-gpu-cuda/tensorflow-gpu-validation.md
+      - PyTorch GPU Validation: 10-linux-gpu-cuda/pytorch-gpu-validation.md
+  - Proxmox Virtualization:
+      - Overview: 20-proxmox-virtualization/README.md
+      - GPU Passthrough: 20-proxmox-virtualization/proxmox-gpu-passthrough.md
+  - Python Engineering:
+      - Overview: 30-python-engineering/README.md
+      - pip on Ubuntu 22.04: 30-python-engineering/pip-on-ubuntu-22-04.md
+      - Virtual Environments: 30-python-engineering/python-virtual-environments.md
+      - requirements.txt Workflow: 30-python-engineering/requirements-txt-workflow.md
+      - Multiple Python Versions: 30-python-engineering/multiple-python-versions-on-ubuntu-22-04.md
+      - Python 3.13 Free Threading: 30-python-engineering/python-313-free-threading-on-ubuntu-2404.md
+  - Linux Administration:
+      - Overview: 40-linux-administration/README.md
+      - Safe sudo NOPASSWD Usage: 40-linux-administration/sudo-nopasswd-safe-usage.md
+      - Keyboard Lock Python Notes: 40-linux-administration/keyboard-lock-python-notes.md
+  - Linux Services:
+      - Overview: 50-linux-services/README.md
+      - PostgreSQL LISTEN/NOTIFY: 50-linux-services/postgresql-listen-notify.md
+      - RustDesk Audio Bridge: 50-linux-services/rustdesk-audio-bridge-ubuntu-2404.md
+      - Tor Proxy IP Rotation: 50-linux-services/tor-proxy-ip-rotation-ubuntu-2404.md
+  - Archive:
+      - Legacy Wiki Page Map: 90-archive/legacy-wiki-page-map.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - fenced_code
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
